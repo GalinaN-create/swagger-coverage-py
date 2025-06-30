@@ -138,7 +138,7 @@ class ApiDocsManagerBase:
             "/", "-"
         ).replace(":", "_")
         path_ = f"swagger-coverage-output/{self.__get_output_subdir()}"
-        pathlib.Path(_path_).mkdir(parents=True, exist_ok=True)
+        pathlib.Path(path_).mkdir(parents=True, exist_ok=True)
         file_path = f"{path_}/{file_name}".split("?")[0]
         file_path = f"{file_path} ({rnd}).{API_DOCS_FORMAT}"
 
